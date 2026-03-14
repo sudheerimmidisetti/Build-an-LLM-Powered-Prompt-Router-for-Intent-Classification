@@ -1,0 +1,35 @@
+__pycache__/
+.pytest_cache/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+
+# Environment files
+.env
+!.env.example
+
+# Runtime and logs
+route_log.jsonl
+*.log
+
+# Test and coverage artifacts
+.coverage
+coverage.xml
+htmlcov/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Type checker / tooling caches
+.mypy_cache/
+.ruff_cache/
+
+# IDE / OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
