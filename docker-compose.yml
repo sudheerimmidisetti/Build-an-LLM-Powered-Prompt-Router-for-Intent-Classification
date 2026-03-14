@@ -1,0 +1,13 @@
+services:
+  ai-prompt-router:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-prompt-router
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - ./route_log.jsonl:/app/route_log.jsonl
+    restart: unless-stopped
